@@ -1,0 +1,11 @@
+# jupyterhub/config.yaml
+proxy:
+  secretToken: "9ef5547230600c76f5a42cb9fc782cef9a9f93428a936adb2e9b4830b906ab70"
+
+singleuser:
+  image:
+    name: jupyter/base-notebook
+    tag: latest
+  memory:
+    limit: 1G
+    guarantee: 512M

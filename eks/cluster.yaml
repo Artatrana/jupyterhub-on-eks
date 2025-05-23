@@ -1,0 +1,15 @@
+# eks/cluster.yaml
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: jupyterhub-cluster
+  region: us-west-2
+
+nodeGroups:
+  - name: jhub-nodes
+    instanceType: t3.micro
+    desiredCapacity: 2
+    minSize: 1
+    maxSize: 3
+    volumeSize: 20
